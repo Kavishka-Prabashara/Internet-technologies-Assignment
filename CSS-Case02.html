@@ -5,73 +5,82 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Usage of Cascade Style Sheets-Case 02</title>
-    <style>
-    #logoID{
-        height: 5%;
-        width: 10%;
-        position: relative;
-        top: 0;
-        left: 0;
+    <title>CSS-Case03</title>
+    <link rel="stylesheet" href="style/normalize.css">
 
-    }
-    #footer{
-        height: 5%;
-        width: 100%;
-        background-color: #737373;
-        position: absolute;
-        bottom: 0;
-    }
-    #header{
-        height: 10%;
-        width: 100%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 0;
-    }
-    #dashBoard{
-        height:85%;
-        width: 10%;
-        background-color: rebeccapurple;
-        position: absolute;
-        left: 0;
-    }
-    #navList{
-        top: 0%;
-        right: 0%;
-    }
+    <style>
+
+        i {
+            font-size: 24px;
+            color: #333;
+        }
+        header>div{
+            border: black 1px solid;
+            top: 0;
+            /*position: relative;*/
+        }
+        header>div>img{
+            left: 0;
+            width: 10%;
+        }
+        header>div>nav>a{
+            margin-left: 10px; /* Add some space between the links */
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+        }
+        header>div>nav>a{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        main>div{
+            left: 0;
+            background-color: rebeccapurple;
+            height: 100%;
+            width: 20%;
+            position: absolute;
+        }
+        ul {
+            list-style-type: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
 
     </style>
+
 </head>
 <body>
-<section>
-<header id="header">
-    <div id="logoID">
-        <img src="assets/ijse.png">
-    </div>
-    <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-    </nav>
-</header>
-<main>
-    <section>
-        <div id="dashBoard">
+    <header>
+        <div>
+            <img src="assets/ijse.png" alt="Ijse Logo">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Service</a>
+                <a href="">Contact</a>
+                <a href="">About Us</a>
+            </nav>
 
         </div>
-    </section>
-</main>
-<footer>
-    <div id="footer">
+    </header>
+    <main>
         <div>
-            Developed by <a href="https://www.linkedin.com/in/kavishka-prabashara-wijerathna-899588189/">Kavishka Prabashara Wijerathna.</a>
+            <ul>
+                <li>Home</li>
+                <li>Service</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+
         </div>
-    </div>
+
+    </main>
+<footer>
+
 </footer>
-</section>
 </body>
 </html>
