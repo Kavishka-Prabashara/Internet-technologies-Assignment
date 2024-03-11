@@ -5,122 +5,213 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS-Case03</title>
-    <link rel="stylesheet" href="style/normalize.css">
+    <title>CSS-Case02</title>
 
+    <head>
+        <link rel="stylesheet" href="style/normalize.css">
     <style>
         header{
-            background-color: white;
-            border: black 1px solid;
-            top: 0;
+            width: 100%;
             height: 10%;
+            background-color: white;
+            position: fixed;
+            z-index: 3;
+            top: 0;
+
+            font-family: "Samsung Sans",serif;
         }
-        header>nav>ul>a{
+
+        header>nav>ul>li{
             display: inline;
             margin-left: 15px;
             color: red;
             text-decoration: none;
-            position: absolute;
 
         }
+
+        header>nav>ul>li:hover{
+            color: black;
+        }
+
+        header>nav>ul{
+            position: absolute;
+            right: 5%;
+            top: 15%;
+        }
+
+        header>nav>ul>li>a{
+            text-decoration: none;
+            color: red;
+            padding-left: 7px;
+        }
+
+        header>nav>ul>li>a:hover{
+            color: black;
+        }
+
         footer{
-            background-color: grey;
             height: 10%;
+            background-color: grey;
+            font-family: "Samsung Sans",serif;
+        }
+
+        footer>p{
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+
+        main>nav{
+            width: 20%;
+            background-color: blueviolet;
+            color: white;
+            position: absolute;
+            top: 0;
             bottom: 0;
         }
+
+        main>nav>ul>li{
+            list-style: none;
+            padding-top: 20%;
+        }
+
+        main>nav>ul>li>i{
+            padding-right: 5%;
+        }
+
+        main>nav>ul>li:hover{
+            color: black;
+        }
+
+        main>nav>ul>li>i:hover{
+            color: black;
+        }
+
+        main>section{
+            margin-left: 20%;
+        }
+
+
         main{
-            background-color: #e80101;
+            position: relative;
+            font-family: "Samsung Sans",serif;
+            margin-top: 7%;
         }
-        #dashboard{
-            background-color: aqua;
+
+        header>img{
+            width: 200px;
+            margin-left: 3%;
+            margin-top: 0.5%;
+            margin-bottom: 0;
+        }
+
+        main>section>p{
+            margin-bottom: 0;
+            margin-left: 1%;
+        }
+        main>section>section{
+            border: 1px solid black;
+            height: 300px;
+            position: relative;
+        }
+        main>section>section>div{
+            height: 100%;
+            width: calc(100% / 3);
+            position: absolute;
+        }
+
+        main > section > section > div:nth-child(1) {
+            background-size: cover;
+            background: url("assets/gif/programmer.gif") center;
             left: 0;
-            height: 100%;
-            width: 20%;
-            top: 10%;
-            bottom: 20%;
-            position: absolute;
         }
-        #content{
-            background-color: #f856f8;
+
+        main > section > section > div:nth-child(2) {
+            left: calc(100% / 3);
+            background-size: cover;
+            background: url("assets/gif/programmer.gif") center;
+        }
+
+        main > section > section > div:nth-child(3) {
             right: 0;
-            height: 100%;
-            width: 80%;
-            top: 10%;
-            bottom: 20%;
-            position: absolute;
+            background-size: cover;
+            background: url("assets/gif/programmer.gif") center;
         }
     </style>
 
 </head>
 <body>
-    <header>
-        <div>
-            <img src="assets/image/ijse.png" alt="Ijse Logo">
-            <nav>
-                <ul>
-                    <a href="">Home</a>
-                    <a href="">Service</a>
-                    <a href="">Contact</a>
-                    <a href="">About Us</a>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
-    <main>
-        <div id="dashboard">
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Service</li>
-                    <li>Contact Us</li>
-                    <li>About Us</li>
-                </ul>
-            </div>
-        </div>
-        <div id="content">
-        <aside>
-            <div id="imgRow">
-                <img src="assets/gif/1656679844338.gif" alt="programmer gif" width="25%" height="20%">
-                <img src="assets/gif/1656679844338.gif" alt="programmer gif" width="25%" height="20%">
-                <img src="assets/gif/1656679844338.gif" alt="programmer gif" width="25%" height="20%">
-            </div>
-        </aside>
+<header>
+    <img src="assets/image/ijse.png" alt="ijse logo">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+            <li><i class="fa-solid fa-globe"></i><a href="">Services</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="">Contacts</a></li>
+            <li><i class="fa-solid fa-circle-info"></i><a href="">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i>Home</li>
+            <li><i class="fa-solid fa-globe"></i>Services</li>
+            <li><i class="fa-solid fa-phone"></i>Contacts</li>
+            <li><i class="fa-solid fa-circle-info"></i>About Us</li>
+        </ul>
+    </nav>
+    <section>
         <section>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt. Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit repudiandae sunt unde!
-
-                Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae quibusdam sequi vitae.
-
-                Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam. Necessitatibus, veritatis.
-
-                Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.
-
-                Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat quam recusandae sequi voluptatibus.
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt. Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit repudiandae sunt unde!
-
-                Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae quibusdam sequi vitae.
-
-                Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam. Necessitatibus, veritatis.
-
-                Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.
-
-                Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat quam recusandae sequi voluptatibus.
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt. Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit repudiandae sunt unde!
-
-                Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae quibusdam sequi vitae.
-
-                Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam. Necessitatibus, veritatis.
-            </p>
+            <div><!-- Images set here--></div>
+            <div><!-- Images set here--></div>
+            <div><!-- Images set here--></div>
         </section>
-            </div>
-    </main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt.
+            Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit
+            repudiandae sunt unde!</p>
+        <p>Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque
+            eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae
+            quibusdam sequi vitae.</p>
+        <p>Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed
+            sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam.
+            Necessitatibus, veritatis.</p>
+        <p>Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et
+            expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.</p>
+        <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
+            consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
+            quam recusandae sequi voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt.
+            Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit
+            repudiandae sunt unde!</p>
+        <p>Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque
+            eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae
+            quibusdam sequi vitae.</p>
+        <p>Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed
+            sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam.
+            Necessitatibus, veritatis.</p>
+        <p>Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et
+            expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.</p>
+        <p>Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi
+            consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat
+            quam recusandae sequi voluptatibus.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt.
+            Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit
+            repudiandae sunt unde!</p>
+        <p>Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque
+            eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae
+            quibusdam sequi vitae.</p>
+        <p>Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed
+            sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam.
+            Necessitatibus, veritatis.</p>
+
+
+        <div id="chatBox">Chat Box</div>
+    </section>
+</main>
 <footer>
-    <div>
-        <p>Developed by IJSE.</p>
-    </div>
+    <p>Developed By IJSE</p>
 </footer>
 </body>
 </html>
