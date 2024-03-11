@@ -6,18 +6,69 @@
     <link rel="stylesheet" href="style/normalize.css">
 
     <style>
+        #firstHead{
+            height: 10vh;
+            width: 100%;
+            background-color: red;
+        }
+        #secondHead{
+            height: 10vh;
+            width: 100%;
+            background-color: darkblue;
+        }
+        #thirdHead{
+            height: 10vh;
+            width: 100%;
+            background-color: #4F4F4FFF;
+
+        }
+        #forthHead{
+            height: 10vh;
+            width: 100%;
+            background-color: darkred;
+        }
+
+        section{
+            height: 100vh;
+            width: 100%;
+            border: black 1px solid;
+        }
         h1{
             height: 10vh;
             width:100%;
             font-family: "Samsung Sans",serif;
+            color: white;
             top: 0;
-            bottom:0;
+            margin: auto;
+
         }
         p {
             font-family: "Samsung Sans",serif;
             font-weight: bold;
             font-size: 72px;
             text-align: center;
+        }
+
+        #firContain{
+            height: 90vh;
+            width: 100%;
+            background-color: white;
+        }
+        #secContain{
+            height: 90vh;
+            width: 100%;
+            background-color: lightskyblue;
+        }
+        #thirContain{
+            height: 90vh;
+            width: 100%;
+            background-color: grey;
+
+        }
+        #forthContain{
+            height: 90vh;
+            width: 100%;
+            background-color: red;
         }
 
     </style>
@@ -28,37 +79,37 @@
 
     <section>
 
-            <h1>Card 1</h1>
+            <h1 id="firstHead">Card 1</h1>
 
-        <div>
+        <div  id="firContain">
             <p>Hello</p>
         </div>
     </section>
 
     <section>
 
-            <h1>Card 2</h1>
+            <h1  id="secondHead">Card 2</h1>
 
-        <div>
+        <div id="secContain">
             <p>How</p>
         </div>
     </section>
 
     <section>
 
-            <h1>Card 3</h1>
+            <h1  id="thirdHead">Card 3</h1>
 
-        <div>
+        <div   id="thirContain">
             <p>Are</p>
         </div>
     </section>
 
+    <section>
+        <h1  id="forthHead">Card 4</h1>
 
-        <h1>Card 4</h1>
-
-    <div>
+    <div   id="forthContain">
         <p>You..?</p>
     </div>
-
+    </section>
 </body>
 </html>
