@@ -9,48 +9,46 @@
     <link rel="stylesheet" href="style/normalize.css">
 
     <style>
-
-        i {
-            font-size: 24px;
-            color: #333;
-        }
-        header>div{
+        header{
+            background-color: white;
             border: black 1px solid;
             top: 0;
-            /*position: relative;*/
+            height: 10%;
         }
-        header>div>img{
-            left: 0;
-            width: 10%;
-        }
-        header>div>nav>a{
-            margin-left: 10px; /* Add some space between the links */
+        header>nav>ul>a{
+            display: inline;
+            margin-left: 15px;
+            color: red;
             text-decoration: none;
-            color: #333;
-            display: inline-block;
-        }
-        header>div>nav>a{
             position: absolute;
-            top: 0;
-            right: 0;
+
         }
-        main>div{
+        footer{
+            background-color: grey;
+            height: 10%;
+            bottom: 0;
+        }
+        main{
+            background-color: #e80101;
+        }
+        #dashboard{
+            background-color: aqua;
             left: 0;
-            background-color: rebeccapurple;
             height: 100%;
             width: 20%;
+            top: 10%;
+            bottom: 20%;
             position: absolute;
         }
-        ul {
-            list-style-type: none;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
+        #content{
+            background-color: #f856f8;
             right: 0;
-            margin: auto;
+            height: 100%;
+            width: 80%;
+            top: 10%;
+            bottom: 20%;
+            position: absolute;
         }
-
     </style>
 
 </head>
@@ -59,28 +57,70 @@
         <div>
             <img src="assets/ijse.png" alt="Ijse Logo">
             <nav>
-                <a href="">Home</a>
-                <a href="">Service</a>
-                <a href="">Contact</a>
-                <a href="">About Us</a>
+                <ul>
+                    <a href="">Home</a>
+                    <a href="">Service</a>
+                    <a href="">Contact</a>
+                    <a href="">About Us</a>
+                </ul>
             </nav>
 
         </div>
     </header>
     <main>
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>Service</li>
-                <li>Contact Us</li>
-                <li>About Us</li>
-            </ul>
-
+        <div id="dashboard">
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
         </div>
+        <div id="content">
+        <aside>
+            <div id="imgRow">
+                <img src="assets/1656679844338.gif" alt="programmer gif" width="25%" height="20%">
+                <img src="assets/1656679844338.gif" alt="programmer gif" width="25%" height="20%">
+                <img src="assets/1656679844338.gif" alt="programmer gif" width="25%" height="20%">
+            </div>
+        </aside>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt. Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit repudiandae sunt unde!
 
+                Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae quibusdam sequi vitae.
+
+                Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam. Necessitatibus, veritatis.
+
+                Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.
+
+                Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat quam recusandae sequi voluptatibus.
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt. Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit repudiandae sunt unde!
+
+                Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae quibusdam sequi vitae.
+
+                Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam. Necessitatibus, veritatis.
+
+                Aliquam dignissimos eveniet ex facere quasi sit sunt ut? Accusantium animi, architecto blanditiis eos et expedita id in laboriosam molestiae odio quidem, recusandae saepe soluta tempora totam. Autem, ex nemo.
+
+                Aliquam atque enim, hic in minus mollitia numquam repellat unde vitae voluptates. Alias aliquid commodi consequuntur cumque deleniti doloremque, earum, exercitationem itaque laboriosam maxime possimus, quaerat quam recusandae sequi voluptatibus.
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis fugit quidem sapiente sunt. Accusantium ad dicta, earum facilis iusto modi nam numquam odit officiis recusandae reprehenderit repudiandae sunt unde!
+
+                Consectetur distinctio id iste recusandae reiciendis reprehenderit voluptate? Blanditiis cumque, doloremque eaque error exercitationem fugit id ipsum rem sequi ullam. Animi doloremque earum eius eum magnam quae quibusdam sequi vitae.
+
+                Architecto commodi eligendi explicabo facere in magnam modi necessitatibus omnis perferendis quod, rem sed sequi velit. Ab accusamus eligendi eveniet, modi obcaecati possimus quasi quia saepe tempora ullam. Necessitatibus, veritatis.
+            </p>
+        </section>
+            </div>
     </main>
 <footer>
-
+    <div>
+        <p>Developed by IJSE.</p>
+    </div>
 </footer>
 </body>
 </html>
